@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Map</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+        <link rel="icon" href="images/moonfavi.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Joan&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <script type="module" src="./script.js"></script>
+        <style>
+            #map {
+                height: 400px;
+                width: 200px;
+                margin: auto;
+                top: 200px;
+                
+                width: 60%;
+                border: 5px solid #72485c;
+                padding: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+
+        <!-- 
+        The `defer` attribute causes the callback to execute after the full HTML
+        document has been parsed. For non-blocking uses, avoiding race conditions,
+        and consistent behavior across browsers, consider loading using Promises
+        with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+        -->
+        <script>
+            let map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 	40.729, lng: -73.996 },
+                zoom: 14,
+            });
+            }  
+            window.initMap = initMap;
+        </script>
+
+        <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4by2MW7fB7K2P_51DWAc05bh1MbC3L9A&callback=initMap">
+        </script>
+    </body>
+</html>

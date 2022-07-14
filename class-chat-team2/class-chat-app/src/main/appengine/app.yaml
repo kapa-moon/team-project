@@ -1,0 +1,3 @@
+runtime: java11
+includes:
+  - /portfolio/env_variables.yaml

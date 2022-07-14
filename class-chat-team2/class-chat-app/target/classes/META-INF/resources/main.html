@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Class Chat</title>
+    <script src="main.js" defer></script>
+    <link rel="icon" href="images/moonfavi.ico" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' >
+  </head>
+  <body>
+
+    <div class = "app"> 
+
+        <div class="sidebar">
+            <div class="logo-content">
+                <div class="logo">
+
+                    <i class='bx bxs-message-square-dots bx-md' ></i>
+                    <div class="logo-name">ClassChat</div>
+
+                </div>
+            </div>
+            
+            <div class="user" style="margin-top:1rem ;">
+                <i class='bx bxs-circle bx-lg'></i>
+
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <!-- <a href="#"> -->
+                        <i class='bx bx-user-circle'></i>
+                        <!-- <span>User Name</span> -->
+                        <div class = "btn-wrap"> 
+                            <button id="myBtn" class = "button-profile" data-text="User Profile">
+                                
+                                <span>My Profile</span>
+                                    </button>
+                                    <!-- The Modal -->
+                                        <div id="myModal" class="modal">
+    
+                                    <!-- Modal content -->
+                                            <div class="modal-content">
+                        
+                                            <span class="close">&times;</span>
+                                            
+
+                                            <div class="search-wrapper">
+                                                <label for="text" style="width: 100%;">
+                                                    Change User Name
+                                                </label>
+                                                <input type="text">
+                                                <label for = "search">School</label>
+                                                <input type = "search" id = "search">
+                                                <!-- add drop down menu as user enter -->
+
+                                                <label for = "search">Major/Minor</label>
+                                                <input type = "search" id = "search">
+                                                
+                                            </div>
+                                            <div class="save">
+                                                <button class="button-choice" style="margin-top: 20px;">Save</button>
+                                            </div>
+                                            
+                    </div>
+        
+                                        </div>
+    
+                        </div>
+                    <!-- </a> -->
+                </li>
+                <li style="flex-direction: column;">
+                    <!-- <a href="#"> -->
+                        <i class='bx bx-search-alt' ></i>
+                        <!-- <input type="text" placeholder="Search classes"> -->
+                        <!-- <span>Add Classes</span> -->
+
+
+                        <button id="open" class="button">Add Class</button>
+
+                        <div class="modal-container" id="modal-container">
+                            <div class="modals">
+                                <div class="search-wrapper">
+                                    <!-- <label></label> -->
+                                    <label for = "search">Search</label>
+                                    <input type = "search" id = "search">
+                                    <!-- add drop down menu as user enter -->
+                                    
+                                </div>
+                                <button id="close" class="button-choice" style="margin-top: 200px;">Close</button>
+                            </div>
+                            
+
+                        </div>
+
+
+
+                        
+
+
+
+                    <!-- </a> -->
+                </li>
+                <li>
+                    <!-- <a href="#"> -->
+                        <i class='bx bxs-color' ></i>
+                        <span>Friends</span>
+                    <!-- </a> -->
+                </li>
+                <li>
+                    <!-- <a href="#"> -->
+                        <i class='bx bxs-purchase-tag-alt' ></i>
+                        <span>Tags</span>
+                    <!-- </a> -->
+                </li>
+                
+                <li>
+                    <!-- <a href="#"> -->
+                        <i class='bx bxs-edit' ></i>
+                        <span>Edit Bio</span>
+                    <!-- </a> -->
+                </li>
+                
+            </ul>
+            
+
+        </div>
+
+
+
+        <div class = "main-app">
+            <h1 class="main-element">Class List</h1>
+            
+            <!-- Trigger/Open The Modal -->
+            <!-- <button id="myBtn">Open Modal</button> -->
+            <div class="course-card main-element">
+                <div class="class-text">
+                    <span class="class-id">Class ID</span>
+                    <h2 class="class-name">Class Name</h2>
+                    <p class="class-schedule">meeting class-schedule</p>
+                </div>
+                <div class="class-students">
+                    <img id = "user-pic" src="">
+                </div>
+                
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </body>
+</html>
