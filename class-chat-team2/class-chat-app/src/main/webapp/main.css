@@ -1,6 +1,5 @@
 /* font-family: 
  font-family: 'Rooto', sans-serif;
-
  */
 
 *{
@@ -115,11 +114,10 @@ ul{
 
 
 .main-app{
-  display: grid;
+  display: flex;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 75%;
-    /* margin: 10px; */
   padding: 30px;
   background-color: #ffffff;
   flex-direction: column;
@@ -127,7 +125,7 @@ ul{
     
 }
 
-@media all and (min-width: 600px) {
+/* @media all and (min-width: 600px) {
     .aside { flex: 1 0 0; }
 }
 
@@ -135,7 +133,7 @@ ul{
     .left-col-1 { order: 1; } 
     .left-col-2   { order: 2; }
     .left-col-3 { order: 3; }
-}
+} */
 
 /* The Modal (background) */
 .modal {
@@ -187,7 +185,7 @@ input{
     font-size: 1rem;
 }
 
-.class-crads{
+.class-cards{
     display: grid;
     grid-template-columns: repeat();
     gap: .25rem;
